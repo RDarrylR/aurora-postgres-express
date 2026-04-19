@@ -1,0 +1,59 @@
+# Terraform
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/terraform.tfstate.*.backup
+**/crash.log
+**/crash.*.log
+**/*.tfplan
+**/*.tfvars
+!**/*.tfvars.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# FastAPI / uvicorn
+*.sqlite3
+*.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated diagrams (source of truth is in diagrams/)
+generated-diagrams/
+
+# Local env files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Node (for any local tooling)
+node_modules/
