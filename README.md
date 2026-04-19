@@ -2,7 +2,7 @@
 
 ![Aurora Express Cover](diagrams/cover.png)
 
-Companion code for the blog post: [Aurora PostgreSQL Express Configuration: From Zero to Production Database in 30 Seconds]([https://darryl-ruggles.cloud/](https://darryl-ruggles.cloud/aurora-postgresql-express-configuration-from-zero-to-production-database-in-30-seconds/))
+Companion code for the blog post: [Aurora PostgreSQL Express Configuration: From Zero to Production Database in 30 Seconds](https://darryl-ruggles.cloud/aurora-postgresql-express-configuration-from-zero-to-production-database-in-30-seconds/)
 
 Terraform, Python 3.14, and a small FastAPI application showing how Aurora PostgreSQL Express (GA March 2026) differs from traditional VPC-based Aurora clusters.
 
