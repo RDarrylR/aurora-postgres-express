@@ -2,7 +2,7 @@
 
 ![Aurora Express Cover](diagrams/cover.png)
 
-Companion code for the blog post: [Aurora PostgreSQL Express Configuration: From Zero to Production Database in 30 Seconds](https://darryl-ruggles.cloud/)
+Companion code for the blog post: [Aurora PostgreSQL Express Configuration: From Zero to Production Database in 30 Seconds]([https://darryl-ruggles.cloud/](https://darryl-ruggles.cloud/aurora-postgresql-express-configuration-from-zero-to-production-database-in-30-seconds/))
 
 Terraform, Python 3.14, and a small FastAPI application showing how Aurora PostgreSQL Express (GA March 2026) differs from traditional VPC-based Aurora clusters.
 
@@ -225,7 +225,7 @@ If you're on the AWS Free Tier with Aurora credits, the demo costs are covered w
 
 ## Related articles
 
-- [Aurora PostgreSQL Express Configuration: From Zero to Production Database in 30 Seconds](https://darryl-ruggles.cloud/) - The blog post this repo accompanies
+- [Aurora PostgreSQL Express Configuration: From Zero to Production Database in 30 Seconds]([https://darryl-ruggles.cloud/](https://darryl-ruggles.cloud/aurora-postgresql-express-configuration-from-zero-to-production-database-in-30-seconds/) - The blog post this repo accompanies
 - [Amazon Aurora DSQL: A Practical Guide to AWS's Distributed SQL Database](https://darryl-ruggles.cloud/amazon-aurora-dsql-a-practical-guide-to-aws-distributed-sql-database/) - Companion piece comparing DSQL to Express
 - [AWS Lambda Durable Functions](https://darryl-ruggles.cloud/aws-lambda-durable-functions/) - Serverless workflow orchestration with checkpoints and replay
 
