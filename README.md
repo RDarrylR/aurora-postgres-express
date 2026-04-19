@@ -67,15 +67,24 @@ Express configuration doesn't support `--database-name` at creation time, so the
 eval "$(terraform output -json connection_hint | \
         jq -r 'to_entries | .[] | "export \(.key)=\(.value)"')"
 
+# Generate an IAM auth token (psql doesn't do this automatically)
+export PGPASSWORD=$(aws rds generate-db-auth-token \
+    --hostname $DB_ENDPOINT --port 5432 --username $DB_USER --region $AWS_REGION)
+
 # Create the app database (express clusters only have "postgres" initially)
 psql "host=$DB_ENDPOINT dbname=postgres user=$DB_USER sslmode=verify-full sslrootcert=system" \
      -c "CREATE DATABASE $DB_NAME;"
 
-# Apply the schema to the new database
+# Refresh the token and apply the schema to the new database
+export PGPASSWORD=$(aws rds generate-db-auth-token \
+    --hostname $DB_ENDPOINT --port 5432 --username $DB_USER --region $AWS_REGION)
+
 cd ../python
 psql "host=$DB_ENDPOINT dbname=$DB_NAME user=$DB_USER sslmode=verify-full sslrootcert=system" \
      -f schema.sql
 ```
+
+Or simply use `make schema` which handles token generation automatically.
 
 ### 3. Run the FastAPI app
 
